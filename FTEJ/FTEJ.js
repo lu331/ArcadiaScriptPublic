@@ -1,7 +1,6 @@
 /**
  * cron "39 11,19 * * *" FTEJ.js
- * export FTEJ="账号1&密码1&ua&device_id&deviceSystem&device_model # 账号2&密码2&ua&device_id&deviceSystem&device_model" 
- * 解决异地短信问题 多账号分割符号#你可以自己改
+ * export FTEJ="15635395072#&325925&ua&device_id&deviceSystem&device_model # 
  */
 const $ = new Env('福田e家')
 const FTEJ = ($.isNode() ? process.env.FTEJ : $.getdata("FTEJ")) || '';
